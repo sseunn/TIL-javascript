@@ -13,6 +13,21 @@
     <link href="boot.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="black-bg">
+      <div class="white-bg">
+        <h4>로그인하세요</h4>
+        <form action="success.html">
+          <div class="my-3">
+            <input type="text" class="form-control" />
+          </div>
+          <div class="my-3">
+            <input type="password" class="form-control" />
+          </div>
+          <button type="submit" class="btn btn-primary">전송</button>
+          <button type="button" class="btn btn-danger" id="close">닫기</button>
+        </form>
+      </div>
+    </div>
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <span class="navbar-brand">Navbar</span>
@@ -28,6 +43,11 @@
       <li class="list-group-item">A fourth item</li>
       <li class="list-group-item">And a fifth one</li>
     </ul>
+
+    <div class="main-bg">
+      <h4>Shirts on sale</h4>
+      <button id="login" class="btn btn-login">로그인</button>
+    </div>
   </body>
 
   <script
@@ -37,10 +57,11 @@
   >
     document.getElementsByClassName('navbar-toggler')[0].addEventListener('click',
     function(){
-    document.getElementsByClassName('list-group')[0].classList.add('show') })
+    document.getElementsByClassName('list-group')[0 ].classList.add('show') }
+
+    document.getElementsByClassName('btn btn-login'[0].addEventListener('click', function (){
+      document.getElementsByClassName('black-bg')[0 ].classList.add('show')
+    }
+    ))
   </script>
 </html>
-
-1. navbar-toggler 버튼 누르면 2. ul list class 에 show를 추가해주세요 3. list
-group show 클래스가 되면 (클래스 탈부착식 ). 1. 버튼 누르면 -> onclick /
-addEventListener 2. ul list class show {display:block}
